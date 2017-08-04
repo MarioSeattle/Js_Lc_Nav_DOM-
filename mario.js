@@ -62,14 +62,16 @@ function clearPyramid() {
 
 function updateGraph() {
     var level = parseInt(document.getElementById('levels').value) // importante por que inicialmente el valor es un string
+    var symbol = document.getElementById('symbol').value
+
     // actualiza el text
     document.getElementById('level_text').value=level;
 
     clearPyramid();
-    printPyramid(level, '@');
+    printPyramid(level, symbol);
 }
 
 
-printPyramid(5, '#');
+updateGraph();
 
 
