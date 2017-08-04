@@ -66,8 +66,6 @@
      foo.textContent = "Ken is fun"
 
      koo.appendChild(foo)
-
-     
      <p>​Ken is fun​</p>​
 
 
