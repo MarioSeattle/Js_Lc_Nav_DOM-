@@ -11,6 +11,12 @@
 <body>
 <h1>Mario 2</h1>
 <h3>Behold this wonderful pyramid:</h3>
+
+<div id="controls">
+    <input type="text" id="level_text" readonly="true" value="5">
+    <input type="range" name="levels" id="levels" value="5" min="1" max="10" onchange="updateGraph();">
+</div>
+
 <div id="pyramid">
     <!-- Our pyramid will go inside here -->
     <div id="construction">
@@ -20,4 +26,4 @@
 </div>
 <script src="mario.js"></script>
 </body>
-﻿</html>
+</html>

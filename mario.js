@@ -1,6 +1,3 @@
-/**
- * Created by Mgomez on 8/4/17.
- */
 //The first line invokes a function called printPyramid, passing in the number 5 as an argument.
 //printPyramid(5);
 
@@ -55,7 +52,24 @@ function printPyramid(height, symbol) {
     //return layer;
 }
 
+function clearPyramid() {
+    document.getElementById('pyramid').innerHTML = " \
+            <div id='construction'> \
+                <p id='notice'>Uh oh! the pyramid is still under construction.</p> \
+                <p>Check back again soon... our developers are hard at wrk as we speak!</p> \
+            </div>";
+}
 
-printPyramid(5, '%');
+function updateGraph() {
+    var level = parseInt(document.getElementById('levels').value) // importante por que inicialmente el valor es un string
+    // actualiza el text
+    document.getElementById('level_text').value=level;
+
+    clearPyramid();
+    printPyramid(level, '@');
+}
+
+
+printPyramid(5, '#');
 
 
